@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Criar conta</title>
+
+</head>
+<body>
+    <main id="form_container">
+        <div id="form_header">
+            <h1 id="form_title">Criar conta</h1>
+            <button type="button" class="btn_default" aria-label="Entrar">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+        </div>
+
+        <form action="" id="account_form">
+            <div id="input_container">
+                <div class="input-box">
+                    <label for="name" class="form-label">Primeiro nome</label>
+                    <div class="input-field">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Fulano">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="last-name" class="form-label">Ultimo nome</label>
+                    <div class="input-field">
+                        <input type="text" name="last-name" id="last-name" class="form-control" placeholder="De tal">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="birthdate" class="form-label">Nascimento</label>
+                    <div class="input-field">
+                        <input type="date" name="birthdate" id="birthdate" class="form-control">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="email" class="form-label">E-mail</label>
+                    <div class="input-field">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="exemplo@gmail.com">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="password" class="form-label">Senha</label>
+                    <div class="input-field">
+                        <input type="password" name="password" id="password" class="form-control" placeholder="********">
+                        <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="confirm_password" class="form-label">Confirmar senha</label>
+                    <div class="input-field">
+                        <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="********">
+                        <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                </div>
+                <fieldset class="radio-container">
+                    <legend class="form-label">Gênero</legend>
+                    <div id="gender_inputs">
+                        <div class="radio-box">
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female" class="form-label">Feminino</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male" class="form-label">Masculino</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="gender" id="other" value="other">
+                            <label for="other" class="form-label">Outro</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <button type="submit" class="btn-default">
+                <i class="fa-solid fa-check"></i>
+                Criar conta
+            </button>
+        </form>
+
+</main>
+
+<script src="src/scripts/form.js"></script>
+</body>
+</html>
